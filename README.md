@@ -20,7 +20,7 @@ npm run dev
 ```
 
 - Desk: http://localhost:3000
-- API: http://localhost:8080/v1/health
+- API: http://localhost:8080/api/v1/health
 
 ## Local chain
 

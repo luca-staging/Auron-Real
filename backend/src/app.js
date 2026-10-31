@@ -11,11 +11,11 @@ function createApp() {
   app.disable("x-powered-by");
   app.use(express.json());
   app.use(cors);
-  app.use("/v1/health", health);
-  app.use("/v1/portfolio", portfolio);
-  app.use("/v1/markets", markets);
-  app.use("/v1/positions", positions);
-  app.use("/v1/governance", governance);
+  app.use("/api/v1/health", health);
+  app.use("/api/v1/portfolio", portfolio);
+  app.use("/api/v1/markets", markets);
+  app.use("/api/v1/positions", positions);
+  app.use("/api/v1/governance", governance);
   app.use(function notFound(_req, res) {
     res.status(404).json({ error: "Not found" });
   });
